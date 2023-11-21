@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    /*
+    display: flex;
+    align-items: center;
+    */
+}
+.container{
+    background-color: rgb(216, 171, 171);
+    width: 600px;
+    height: 6000px;
+    margin-left: 150px;
+    position: relative;
+}
+.kutu{
+    /*
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    */
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 250px;
+    height: auto;
+    min-height: 400px;
+    max-height: 600px;
+    overflow: hidden;
+    border: thin solid rgb(104, 103, 103);
+    border-radius: 50px 30px 10px 150px;
+    padding: 20px;
+    box-shadow: 10px 5px 5px rgb(104, 103, 103);
+    font-family: 'Handjet', sans-serif;
+    
+}
+
+div > img{
+    max-width: 90%;
+    border-radius: 50%;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+          margin:0;
+          padding:0;
+          box-sizing:border-box;
+        }
+        body{
+          
+          background:#F0CD48;
+          height:100vh;
+          display: grid;
+          place-items: center;
+            
+          
+        }
+        div {
+
+
+            width: 300px;
+            height: 100%;
+            background: #F0CD48;
+            border: 100px solid #D86F45;
+
+            transform: rotate(-45deg) skewY(45deg) translateY(-35%);
+            position:relative;
+
+
+            
+          }
+
+          div::before{
+            content:"";
+            display: block;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%) skewY(-45deg);
+            background: #5F3829;
+  
+
+          }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

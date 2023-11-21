@@ -1,0 +1,42 @@
+body{
+    height: 100vh;
+    display:grid;
+    place-items: center;
+    background: #F3EAD2;
+    box-sizing: border-box;
+  }
+  div {
+    width: 185px;
+    height: 185px;
+    background: #F3EAD2;
+    border-radius: 50%;
+    border: 30px solid #42A5F5;
+    position:relative;
+  }
+  div:before{
+    content:" ";
+    display: block;
+    width: 30px;
+    height:190px;
+    background:#42A5F5;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+  div:after{
+    content:" ";
+    display: block;
+    width: 65px;
+    height:65px;
+    border: 30px solid transparent;
+    border-top-color:#42A5F5;
+    border-right-color:#42A5F5;
+    position:absolute;
+    top:60%;
+    left:17%;
+    transform:translate(-50%,-50%);
+    transform:rotate(-45deg);
+  }
+
+
