@@ -1,0 +1,96 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --siyah-renk: black;
+    --koyu-gri-renk: hsl(212, 21%, 14%);
+    --krem-renk: hsl(30, 38%, 92%);
+    --acik-gri-renk: hsl(228, 12%, 48%);
+    --acik-yesil-renk: hsl(158, 36%, 37%);
+  }
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kutu{
+    background-color: var(--krem-renk);
+    flex: 0 0 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+img{
+    flex: 0 0 100%;
+    width: 40%;
+}
+
+h1,h2,h4,h5,p,button,span{
+    width: 60%;
+    padding: 20px;
+}
+.kutu > span{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.kutu > h2{
+    width: 40%;
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--koyu-gri-renk);
+}
+
+.kutu h1{
+    width: 35%;
+    color: var(--acik-yesil-renk);
+}
+.kutu  h5{
+    width: 25%;
+    color: var(--acik-gri-renk);
+    text-decoration: line-through;
+}
+
+button{
+    width: 40%;
+    height: 50px;
+    background-color: var(--acik-yesil-renk);
+    color: var(--krem-renk);
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button > p{
+
+    flex: 0 0 80%;
+    line-height: 50px;
+}
+.material-symbols-outlined {
+    flex: 1 1 50px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 10,
+    'opsz' 24;
+
+  }
