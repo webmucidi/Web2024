@@ -81,12 +81,12 @@ button{
     align-items: center;
 }
 button > p{
-
-    flex: 0 0 80%;
+    text-align: left;
+    flex: 0 0 50%;
     line-height: 50px;
 }
 .material-symbols-outlined {
-    flex: 1 1 50px;
+    flex: 0 0 50px;
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
