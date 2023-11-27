@@ -1,0 +1,41 @@
+:root{
+    --yesil:rgb(51, 79, 0);
+    --yesil2:rgb(180, 167, 104);
+    --kirmizi:rgb(166, 0, 1);
+    --sari:rgb(226, 144, 0);
+    --sarimsak:rgb(244, 227, 202)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../images/bodyBg.jpg) no-repeat center/cover;
+    
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header,main,footer{
+
+    width: 100%;
+    padding: 15px;
+}
+
+header{
+    flex: 0 0 10%;
+    background-color: aqua;
+}
+main{
+    flex: 1 1 85%;
+    
+}
+footer{
+    flex: 0 0 5%;
+    background-color: brown;
+}
