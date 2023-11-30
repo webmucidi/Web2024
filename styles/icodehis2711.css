@@ -1,15 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@keyframes butonAnimasyon {
+    from {border: none;}
+    to {border: thin solid #fff;}
+  }
+
+
 :root{
-    --yesil:rgb(51, 79, 0);
+    --turuncu: rgb(226, 144, 0);
+    --yesil:#657301;
     --yesil2:rgb(180, 167, 104);
     --kirmizi:rgb(166, 0, 1);
-    --sari:rgb(226, 144, 0);
-    --sarimsak:rgb(244, 227, 202)
+    --sarimsak:rgb(244, 227, 202);
+    --lacivert:#242d4c;
+    --mavi:#d4deea
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    font-family: 'Nova Square', sans-serif;  
 }
 body{
     background: url(../images/bodyBg.jpg) no-repeat center/cover;
@@ -29,13 +42,84 @@ header,main,footer{
 
 header{
     flex: 0 0 10%;
-    background-color: aqua;
+    background-color: var(--turuncu);
+    display: flex;
+    justify-content: flex-end;
 }
+ ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+    
+}
+
+header > ul > li{
+    
+}
+
+header > ul > li > a{
+    color: var(--mavi);
+    padding: 5px 15px;
+}
+
+header > ul > li > a:hover{
+    font-weight: bolder;
+}
+
+.uyeOl{
+    background-color: var(--kirmizi);
+    border-radius: 5px;
+}
+
+a.uyeOl:hover{
+    animation-name: butonAnimasyon;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.diller{
+    display: none;
+}
+
 main{
     flex: 1 1 85%;
     
 }
 footer{
     flex: 0 0 5%;
-    background-color: brown;
+    background-color: var(--yesil);
+    display: flex;
+    justify-content: space-between;
+    color: var(--mavi);
 }
+
+footer a {
+    color:var(--mavi)
+}
+
+footer > h3{
+    text-align: center;
+    justify-content: center;
+
+}
+
+.altMenu{
+    
+    justify-content: flex-start;
+}
+
+.socialmedia{
+    
+    justify-content: flex-end;
+}
+
+footer > *{
+    flex: 1 1 33%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+
